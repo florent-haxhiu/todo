@@ -18,12 +18,11 @@ jobs:
     - name: Set up Python 3.10
       uses: knowsuchagency/poetry-install@v2
       with:
-        create-virtualenv: false
+        create-virtualenv: true
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         poetry install
-        poetry shell
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
