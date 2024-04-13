@@ -32,5 +32,4 @@ jobs:
         poetry run flake8 todo_backend --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        ls
         poetry run pytest
